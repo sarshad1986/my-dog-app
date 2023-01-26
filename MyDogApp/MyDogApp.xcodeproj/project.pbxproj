@@ -16,6 +16,8 @@
 		F9D9526A297EB83F0092136B /* MyDogAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D95269297EB83F0092136B /* MyDogAppTests.swift */; };
 		F9D95274297EB83F0092136B /* MyDogAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D95273297EB83F0092136B /* MyDogAppUITests.swift */; };
 		F9D95276297EB83F0092136B /* MyDogAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D95275297EB83F0092136B /* MyDogAppUITestsLaunchTests.swift */; };
+		F9D95284297EEED80092136B /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D95283297EEED80092136B /* BreedsViewController.swift */; };
+		F9D95286298160860092136B /* BreedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D95285298160860092136B /* BreedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F9D9526F297EB83F0092136B /* MyDogAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDogAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D95273297EB83F0092136B /* MyDogAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDogAppUITests.swift; sourceTree = "<group>"; };
 		F9D95275297EB83F0092136B /* MyDogAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDogAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9D95283297EEED80092136B /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
+		F9D95285298160860092136B /* BreedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		F9D95251297EB83E0092136B /* MyDogApp */ = {
 			isa = PBXGroup;
 			children = (
+				F9D952872981A9A30092136B /* Model */,
+				F9D95282297EEEB10092136B /* Breeds */,
 				F9D95252297EB83E0092136B /* AppDelegate.swift */,
 				F9D95254297EB83E0092136B /* SceneDelegate.swift */,
-				F9D95256297EB83E0092136B /* ViewController.swift */,
 				F9D95258297EB83E0092136B /* Main.storyboard */,
+				F9D95256297EB83E0092136B /* ViewController.swift */,
 				F9D9525B297EB83F0092136B /* Assets.xcassets */,
 				F9D9525D297EB83F0092136B /* LaunchScreen.storyboard */,
 				F9D95260297EB83F0092136B /* Info.plist */,
@@ -125,6 +131,22 @@
 				F9D95275297EB83F0092136B /* MyDogAppUITestsLaunchTests.swift */,
 			);
 			path = MyDogAppUITests;
+			sourceTree = "<group>";
+		};
+		F9D95282297EEEB10092136B /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				F9D95283297EEED80092136B /* BreedsViewController.swift */,
+				F9D95285298160860092136B /* BreedCollectionViewCell.swift */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		F9D952872981A9A30092136B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D95257297EB83E0092136B /* ViewController.swift in Sources */,
+				F9D95284297EEED80092136B /* BreedsViewController.swift in Sources */,
 				F9D95253297EB83E0092136B /* AppDelegate.swift in Sources */,
+				F9D95286298160860092136B /* BreedCollectionViewCell.swift in Sources */,
 				F9D95255297EB83E0092136B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
