@@ -19,6 +19,7 @@
 		F9D95284297EEED80092136B /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D95283297EEED80092136B /* BreedsViewController.swift */; };
 		F9D95286298160860092136B /* BreedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D95285298160860092136B /* BreedCollectionViewCell.swift */; };
 		F9D9528B2982E3AB0092136B /* BreedsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D9528A2982E3AB0092136B /* BreedsPresenter.swift */; };
+		F9D9528E29841F2B0092136B /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D9528D29841F2B0092136B /* Breed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F9D95283297EEED80092136B /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
 		F9D95285298160860092136B /* BreedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCollectionViewCell.swift; sourceTree = "<group>"; };
 		F9D9528A2982E3AB0092136B /* BreedsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedsPresenter.swift; sourceTree = "<group>"; };
+		F9D9528D29841F2B0092136B /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		F9D9528C2982E3DA0092136B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9D9528D29841F2B0092136B /* Breed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D95257297EB83E0092136B /* ViewController.swift in Sources */,
+				F9D9528E29841F2B0092136B /* Breed.swift in Sources */,
 				F9D95284297EEED80092136B /* BreedsViewController.swift in Sources */,
 				F9D95253297EB83E0092136B /* AppDelegate.swift in Sources */,
 				F9D9528B2982E3AB0092136B /* BreedsPresenter.swift in Sources */,
