@@ -11,7 +11,7 @@ import Foundation
 class BreedsPresenter {
     
     weak var viewController: BreedsViewController?
-    //noice
+    
     // called when view controller is ready to present something
     func viewReady() {
         loadModel()
@@ -24,6 +24,7 @@ class BreedsPresenter {
     
     func buildViewState() -> BreedsViewController.ViewState {
         return .init(items: [.init(text: "Hello dogs")])
+        //same as return BreedsViewController.ViewState(items: [BreedsViewController.CellViewState(text: "Hello dog")])
     }
 }
 
