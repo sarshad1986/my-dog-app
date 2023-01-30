@@ -14,14 +14,15 @@ class BreedsViewController: UIViewController, UICollectionViewDataSource {
     }
     
     struct ViewState {
+        let header: String
         let items: [CellViewState]
     }
     
     //creates an instance of the struct so you can use it in the collection view functions below.
-    var viewState: ViewState = .init(items: [])
+    var viewState: ViewState = .init(header: "", items: [])
     
     //creates an instance of the presenter when the view controller is initialised.
-    var presenter: BreedsPresenter = .init()
+    var presenter: BreedsPresenter = .init(
     
     @IBOutlet weak var collectionView: UICollectionView!
     
