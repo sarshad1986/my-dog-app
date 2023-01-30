@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Breed {
+// codable means your struct can be converted from JSON or converted to JSON
+struct Breed: Codable {
     let id: Int
     let name: String?
 }

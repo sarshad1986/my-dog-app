@@ -21,9 +21,15 @@ class BreedsPresenter {
     }
     
     func loadModel() {
-        let allBreeds = service.fetchAllBreeds()
-        let stateOfEntireScreen = buildViewState(breeds: allBreeds)
-        viewController?.render(stateOfEntireScreen)
+        service.fetchAllBreeds { allBreeds in
+            let stateOfEntireScreen = self.buildViewState(breeds: allBreeds)
+            
+            //everything that's working with UIKit has to be executed on the main thread
+            DispatchQueue.main.async {
+                self.viewController?.render(stateOfEntireScreen)
+            }
+        }
+
 //       let state = buildViewState()
 //        viewController?.render(state)
     }

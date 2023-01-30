@@ -35,6 +35,7 @@ class BreedsViewController: UIViewController, UICollectionViewDataSource {
     
     func render(_ viewState: ViewState) {
         self.viewState = viewState
+        title = viewState.header
         collectionView.reloadData()
     }
     
