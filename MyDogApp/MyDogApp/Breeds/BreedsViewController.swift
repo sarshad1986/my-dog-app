@@ -22,9 +22,9 @@ class BreedsViewController: UIViewController, UICollectionViewDataSource {
     var viewState: ViewState = .init(header: "", items: [])
     
     //creates an instance of the presenter when the view controller is initialised.
-    var presenter: BreedsPresenter = .init(
+    var presenter: BreedsPresenter = .init()
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         presenter.viewController = self
